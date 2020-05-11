@@ -2,11 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import './App.css';
 import * as serviceWorker from './serviceWorker';
+
+const image=require('./assets/62127775.jpeg');
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  <h1>Licenses</h1>
+    <div className="test">
+      <App name='El Mo' age="18" address="123 Sesame st." state="MA"/>
+      <App name="Jotaro Joestar" age="65" address="14 Grain ave." state="ID"/>
+      <App name="Freddie Cougar" age="21" address="666 Elm st." state="CA"/>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
